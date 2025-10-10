@@ -1,0 +1,91 @@
+
+/* CSS Reset/Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent box model */
+}
+
+html {
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Default line height */
+    -webkit-text-size-adjust: 100%; /* Prevent font size adjustment on mobile */
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Default font family */
+    color: #333; /* Default text color */
+    background-color: #fff; /* Default background color */
+}
+
+/* Basic Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+
+/* Accessibility enhancements (optional) */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}    
+body {
+    margin: 0;
+    text-align: center;
+    background: url(bg.png) top center no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #2f2f2f;
+}
+.bannerwrp {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bannerwrp h1 {
+    font-size: 65px;
+    color: #fff;
+    max-width: 900px;
+    line-height: 1.2;
+    margin: 0 auto;
+    font-weight: 400;
+}
+.bannerwrp a {
+    font-family: "arial";
+    font-size: 30px;
+    font-weight: 600;
+    background: #24cfa6;
+    padding: 20px 40px;
+    margin-top: 40px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #000;
+}
+.bannerwrp .title{
+    padding-top: 400px;
+}

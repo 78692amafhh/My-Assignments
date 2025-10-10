@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/OpenSansCondensed-Medium.woff2') format('woff2'),
+        url('fonts/OpenSansCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+        url('fonts/OpenSansCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans SemiCondensed';
+    src: url('fonts/OpenSansSemiCondensed-ExtraBold.woff2') format('woff2'),
+        url('fonts/OpenSansSemiCondensed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/OpenSansCondensed-Regular.woff2') format('woff2'),
+        url('fonts/OpenSansCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/OpenSansCondensed-SemiBold.woff2') format('woff2'),
+        url('fonts/OpenSansCondensed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans SemiCondensed';
+    src: url('fonts/OpenSansSemiCondensed-Bold.woff2') format('woff2'),
+        url('fonts/OpenSansSemiCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed'!important;
+    text-decoration: none;
+}
+body {
+    background-color: #f2f2f2;
+    color: #000;
+    line-height: 1.4;
+    text-align: center;
+}
+body p{
+    line-height: 1.4;
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+    padding: 30px;
+}
+.container .inner{
+    max-width: 1000px;
+    margin: auto;
+}
+.Section1 {
+    background: #1a2434;
+    padding: 20px;
+}  
+.Section1 *{
+    color: #ffffff;
+}  
+.Section3 .container{
+    background: #60b4ec;
+}    
+section:not(.Section1) {
+    padding: 20px;
+}              
+h1 {
+    font-size: 50px;
+}           
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}   
+h3{
+    font-size: 30px;
+}      
+p {
+    font-size: 18px;
+} 
+.main .Section2{
+    padding: 35px 30px;
+} 
+.Section3 p{
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+} 
+.Section3 p b{
+    color: #60b4ec;
+    font-weight: 700;
+} 
+.Section4 .container{
+    background: #ffff70;
+    font-weight: 700;
+} 
+.Section4 p {
+    color: #000000;
+    font-weight: 700;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
+} 
+.Section5 .container{
+    background: #fcb2b2;
+    font-weight: 700;
+} 
+.Section5 p {
+    color: #000000;
+    font-weight: 700;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+} 
+.Section5 p b{
+    color: #081b3d;
+} 
+.Section6 .container{
+    background: #b2fcd8;
+    font-weight: 700;
+} 
+.Section6 p {
+    color: #000000;
+    font-weight: 700;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+} 
+footer{
+    background: #081b3d;
+    padding: 20px;
+    color: #fff;
+    margin-top: 20px;
+} 
+a{
+    text-decoration: none;
+    color: #000000;
+    ;
+}
