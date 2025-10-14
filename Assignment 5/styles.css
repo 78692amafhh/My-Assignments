@@ -1,86 +1,58 @@
-@font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('fonts/OpenSansCondensed-Medium.woff2') format('woff2'),
-        url('fonts/OpenSansCondensed-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('fonts/OpenSansCondensed-Light.woff2') format('woff2'),
-        url('fonts/OpenSansCondensed-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Open Sans SemiCondensed';
-    src: url('fonts/OpenSansSemiCondensed-ExtraBold.woff2') format('woff2'),
-        url('fonts/OpenSansSemiCondensed-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('fonts/OpenSansCondensed-Regular.woff2') format('woff2'),
-        url('fonts/OpenSansCondensed-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('fonts/OpenSansCondensed-SemiBold.woff2') format('woff2'),
-        url('fonts/OpenSansCondensed-SemiBold.woff') format('woff');
+    font-family: Apple;
+    src: url(fonts/sf-pro-display_bold.woff2) format('woff2'),
+        url(fonts/sf-pro-display_bold.woff) format('woff');
     font-weight: 600;
-    font-style: normal;
     font-display: swap;
 }
-
 @font-face {
-    font-family: 'Open Sans SemiCondensed';
-    src: url('fonts/OpenSansSemiCondensed-Bold.woff2') format('woff2'),
-        url('fonts/OpenSansSemiCondensed-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+    font-family: Apple;
+    src: url(fonts/sf-pro-display_regular.woff2) format('woff2'),
+        url(fonts/sf-pro-display_regular.woff) format('woff');
+    font-weight: 400;
     font-display: swap;
 }
-
+@font-face {
+    font-family: Apple;
+    src: url(fonts/sf-pro-display_medium.woff2) format('woff2'),
+        url(fonts/sf-pro-display_medium.woff) format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans Condensed'!important;
+    font-family: Apple;
     text-decoration: none;
 }
 body,html {
     height: 100%;
 }
-body {
-    background-color: #f2f2f2;
-    color: #000;
-    line-height: 1.4;
-    text-align: center;
-    height: 100%;
-}
 body p{
     line-height: 1.4;
+    color: #1d1d1f;
 }            
 h1 {
-    font-size: 40px;
+    font-size: 50px;
+    color: #f5f5f7;
 }           
 h2 {
-    font-size: 35px;
+    font-size: 56px;
     margin-top: 15px;
-}     
+    font-weight: 600;
+    color: #1d1d1f;
+}      
+.Section2 h2 {
+    color: #f5f5f7;
+    margin: 5px auto -10px;
+    font-size: 28px;
+    font-weight: 100 !important;
+} 
 h3{
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 400;
 }      
 p {
     font-size: 18px;
@@ -89,46 +61,147 @@ a{
     text-decoration: none;
     color: #000000;
 }
-.Section1 {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 30px;
-}
-.Section1 .card{
-    width: 250px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.22);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-.card img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.card button {
-    margin: 15px auto;
-  background-color: #007bff; /* Blue background */
-  color: white; /* White text */
-  padding: 10px 20px; /* Padding around text */
-  border: none; /* No border */
-  border-radius: 5px; /* Slightly rounded corners */
-  font-size: 16px;
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
-}
-
-.card button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
 footer {
     padding: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 15px 50px;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    background: #181818;
+}
+nav ul a {
+    color: #d1d1d1;
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+}
+.main {
+    text-align: center;
+}
+.main button {
+    border-radius: 100px;
+    background: #0071e3;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: none;
+    border: none;
+}
+.main button.buy{
+    background: transparent;
+    color: #0071e3;
+    border: #0071e3 solid 1px;
+}
+.main button.buy:hover{
+    background: #0071e3;
+    color: #ffffff;
+}
+.main .Section2 {
+    background: rgb(0, 0, 0);
+    padding-top: 50px;
+}
+.main .Section2 img {
+    width: 100%;
+    max-width: 1100px;
+    margin: 4vw auto -4px;
+}
+.main .btn{
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    padding: 30px 0 0;
+}
+.w-100 {
+    width: 100%;
+}
+.Section3 {
+    padding: 60px 0;
+}
+.Section3 h3 {
+    padding: 10px 0 0px;
+    margin: 0 auto;
+    max-width: 355px;
+    font-weight: 400!important;
+}
+.Section5 .conainer {
+    display: flex;
+    gap: 50px;
+    justify-content: center;    
+}
+.Section5 .conainer img{
+    max-width: 700px;
+    padding-top: 60px;
+}
+.Section5 {
+    padding-top: 0;
+}
+.Section6 .leftwrp{
+    background-image: url(images/macbook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Section6 .rgttwrp{
+    background-image: url(images/ipad_promo.jpg);
+    background-size: cover;
+    background-position: center;
+}  
+.Section5 img,
+.Section5 h3{
+    font-size: 35px;
+    padding: 0!important;
+    font-weight: 500!important;
+}
+.Section5 h4{
+    font-size: 22px;
+    font-weight: 400!important;
+    padding: 10px 0 0!important;
+}
+.iphoneimg {
+    padding: 50px 0;
+}
+.Section2 .iphoneimg {
+    padding: 0;
+}
+.Section5 .rgttwrp,
+.Section5 .leftwrp{
+    width: 50%;
+}
+.Section6 .leftwrp {
+    background: url(images/iphone8.png) no-repeat top center;
+    background-size: cover;
+    padding: 100px 0 350px;
+}
+.Section6 .rgttwrp{
+    background: url(images/iphone7.png) no-repeat top center;
+    background-size: cover;
+    padding: 100px 0 350px;
+}
+.Section7 .rgttwrp img{
+    max-width: 450px;
+}
+
+body .Section7 {
+    display: grid;
+    area;
+}
+@media (max-width: 768px) {
+.groupphones  {
+    width: 100%;
+}
+body .Section3 .conainer,
+body .Section5 .conainer {
+    display: block;
+}
+body .Section5 .rgttwrp img, 
+body .Section5 .leftwrp img,
+body .Section5 .rgttwrp, 
+body .Section5 .leftwrp {
+    width: 100%;
+}
+
 }
