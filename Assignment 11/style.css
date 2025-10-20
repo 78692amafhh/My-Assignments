@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+}
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed" !important;
+  text-decoration: none;
+}
+html body {
+  height: 100%;
+}
+html body .wrapper .imgwrpflex,
+html body .wrapper .innerrow {
+  display: flex;
+  gap: 10px;
+}
+html body .wrapper .innerrow .colm1 {
+  width: 38%;
+}
+html body .wrapper .innerrow .colm2 {
+  width: 70%;
+}
+html body .wrapper img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+html body .wrapper .imgwrpflex {
+  padding-top: 5px;
+}
+html body .wrapper .imgwrpflex .imgwrp {
+  width: 33.33%;
+}
+html body .wrapper .main {
+  padding: 20px;
+  margin: 10px;
+  border: solid #858585;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

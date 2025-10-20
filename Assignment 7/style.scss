@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans Condensed'!important;
+        text-decoration: none;
+    }
+    body {
+        height: 100%;
+        padding-top: 50px;
+        
+        .innerrow,
+        .captionwrp {
+            display: flex!important;
+            justify-content: space-between;
+            align-items: center;
+    gap: 30px;
+        }
+        .card img{
+            object-fit: cover;
+                transition: all ease 0.3s;
+        }
+        .card {
+            overflow: hidden;
+            position: relative;
+        
+            .captionwrp {
+                position: absolute;
+                bottom: -40%;
+                height: 50px;
+                width: 100%;
+                background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+                transition: all ease 0.3s;
+                padding: 40px 20px;
+            }
+        }
+        .card:hover .captionwrp {
+            bottom: 10px;
+            padding: 10px;
+    padding: 40px 20px;
+        }
+        .card:hover img {
+    transform: rotate(8deg);
+            scale: 1.1;
+                transition: all ease 0.3s;
+        }
+    }
+}
