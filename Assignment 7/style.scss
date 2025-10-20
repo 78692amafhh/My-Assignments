@@ -34,16 +34,17 @@ html {
                 background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
                 transition: all ease 0.3s;
                 padding: 40px 20px;
+    color: #fff;
             }
         }
         .card:hover .captionwrp {
-            bottom: 10px;
+            bottom: 0px;
             padding: 10px;
     padding: 40px 20px;
         }
         .card:hover img {
     transform: rotate(8deg);
-            scale: 1.1;
+            scale: 1.25;
                 transition: all ease 0.3s;
         }
     }
