@@ -35,14 +35,15 @@ html body .card .captionwrp {
   background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
   transition: all ease 0.3s;
   padding: 40px 20px;
+  color: #fff;
 }
 html body .card:hover .captionwrp {
-  bottom: 10px;
+  bottom: 0px;
   padding: 10px;
   padding: 40px 20px;
 }
 html body .card:hover img {
   transform: rotate(8deg);
-  scale: 1.1;
+  scale: 1.25;
   transition: all ease 0.3s;
 }/*# sourceMappingURL=style.css.map */
