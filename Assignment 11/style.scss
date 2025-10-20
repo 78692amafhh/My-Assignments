@@ -1,0 +1,47 @@
+html {
+        height: 100%;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans Condensed'!important;
+        text-decoration: none;
+    }
+    body {
+        height: 100%;
+
+        .wrapper {
+            
+            .imgwrpflex,
+            .innerrow{
+                display: flex;
+                gap: 10px;
+            }
+            .innerrow .colm1 {
+                width: 38%;
+            }
+            .innerrow .colm2{
+                width: 70%;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                border: 1px solid rgb(0 0 0 / 50%);
+            }
+            .imgwrpflex {
+                padding-top: 5px;
+
+                    .imgwrp{
+                    width: 33.33%;
+                }
+            }
+            .main {
+            padding: 20px;
+            margin: 10px;
+            border: solid #858585;
+            border-radius: 10px;
+            }
+        }
+        }
+
+}

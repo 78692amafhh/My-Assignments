@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed" !important;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+html body {
+  min-height: 100%;
+}
+html body .wrapper {
+  display: grid;
+  grid-template-areas: "header header header" "section section section" "botmleft mid-botmup botmrgt" "botmleft midbotmdown botmrgt";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  height: 100vh;
+}
+html body .wrapper header {
+  background-color: #ff5733;
+  grid-area: header;
+}
+html body .wrapper section {
+  background-color: #dc07bc;
+  grid-area: section;
+}
+html body .wrapper .botmleft {
+  background-color: #2fa109;
+  grid-area: botmleft;
+}
+html body .wrapper .mid-botmup {
+  background-color: #0b8561;
+  grid-area: mid-botmup;
+}
+html body .wrapper .botmrgt {
+  background-color: #901c1c;
+  grid-area: botmrgt;
+}
+html body .wrapper .midbotmdown {
+  background-color: #01310d;
+  grid-area: midbotmdown;
+}/*# sourceMappingURL=gridlayout2.css.map */

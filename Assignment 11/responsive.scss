@@ -1,0 +1,35 @@
+@media (max-width: 400px) {
+    html {
+        body {
+
+        .wrapper {
+            .imgwrpflex,
+            .innerrow {
+                        display: block;
+                }
+            .imgwrpflex .imgwrp,
+            .innerrow .colm2,
+            .innerrow .colm1 {
+                    width: 100%;
+                }
+                .main {
+                padding: 10px;
+            }
+             }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        body {
+            .wrapper {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            max-width: 85%;
+            margin: 0 auto;
+        }
+    }
+}
+}
