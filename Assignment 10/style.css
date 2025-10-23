@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+}
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("fonts/OpenSansCondensed-Medium.woff2") format("woff2"), url("fonts/OpenSansCondensed-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed" !important;
+  font-weight: 400;
+  text-decoration: none;
+}
+html body {
+  height: 100%;
+  padding-top: 50px;
+}
+html body .wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+html body .wrapper section {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+html body .wrapper section:hover {
+  flex-grow: 2;
+}
+html body .wrapper section:nth-child(1) {
+  background-image: url(https://plus.unsplash.com/premium_photo-1675127367513-7f4388aa9076?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500);
+}
+html body .wrapper section:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1526514772488-784697f4424d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fG5hdHVyYWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500);
+}
+html body .wrapper section:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1585016495481-91613a3ab1bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500);
+}
+html body .wrapper section:nth-child(4) {
+  background-image: url(https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyYWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500);
+}
+html body .wrapper section:nth-child(5) {
+  background-image: url(https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500);
+}/*# sourceMappingURL=style.css.map */
