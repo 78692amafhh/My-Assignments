@@ -30,6 +30,17 @@ html body nav.navbar {
 }
 html body nav.navbar a {
   color: #fff;
+  font-size: clamp(1.2rem, 1vw, 1.4rem);
+}
+html body nav.navbar a.gets {
+  padding: 10px;
+  background-color: #0353ac;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
 }
 html body button.btn-1 {
   padding: 15px 30px;

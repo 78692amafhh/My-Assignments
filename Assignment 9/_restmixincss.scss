@@ -1,5 +1,15 @@
-@mixin button-style($bg-color: blue, $text-color: white, $text-size: 16px) {
-  padding: 15px 30px;
+@mixin button-style($bg-color: blue, $text-color: white, $text-size: 14px, $padding:15px 30px) {
+  padding: $padding;
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: $text-size;
+  outline: none;
+}
+@mixin button-style2($bg-color: #0353ac, border-radius:50px, $text-color: white, $text-size: 16px, $padding:15px 30px) {
+  padding: $padding;
   background-color: $bg-color;
   color: $text-color;
   border: none;
