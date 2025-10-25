@@ -31,11 +31,10 @@
             padding: 20px 20px;
             a{
                 color: #fff;
+                font-size: clamp(1.2rem, 1vw, 1.4rem);
             }
             a.gets{
-                background: red;
-                color: #fff;
-                @include pad
+                @include button-style2($text-size: 14px, $padding:10px);
             }
         }
         button.btn-1 {
