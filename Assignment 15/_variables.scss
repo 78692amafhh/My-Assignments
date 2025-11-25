@@ -1,0 +1,58 @@
+:root {
+  --fontChillax: 'Chillax';
+  --fontSatoshi: 'Satoshi';
+  --fontRoboto: 'Roboto';
+  --bgcolor: #121212;
+  --textcolor: rgba(244,242,237,.6);
+  --titlecolor: #f4f2ed;
+  --fontsize: 1rem;
+  --spacing1rem: 1rem;
+  --direction: row;
+  --justify: center;
+  --align: center;
+  --fontweight: 400;
+  --grid-template-columns: 1fr;
+  --gap: 1rem;
+  --radius: 8px;
+  --fwidth: 100%;
+  --maxwidth: 1200px;
+}
+@font-face {
+  font-family: 'Chillax';
+  src: url('fonts/63cffc0a3942456e003bc265_Chillax-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('fonts/63cffc20aa8997095067596f_Satoshi-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@mixin make-flex($direction: row, $gap: var(--spacing1rem, 1rem)) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  justify-content: var(--justify, center);
+  align-items: var(--align, center);
+}
+@mixin make-grid($columns: var(--grid-template-columns), $gap: var(--spacing1rem, 1rem)) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+  justify-content: var(--justify, center);
+  align-content: var(--align, center);
+}

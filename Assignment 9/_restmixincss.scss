@@ -1,19 +1,9 @@
-@mixin button-style($bg-color: blue, $text-color: white, $text-size: 14px, $padding:15px 30px) {
+@mixin button-style($bg-color: #0353ac, $border-radius:5.0rem, $text-color: white, $text-size: 1.4rem, $padding:1.1rem 3.2rem) {
   padding: $padding;
   background-color: $bg-color;
   color: $text-color;
   border: none;
-  border-radius: 7px;
-  cursor: pointer;
-  font-size: $text-size;
-  outline: none;
-}
-@mixin button-style2($bg-color: #0353ac, border-radius:50px, $text-color: white, $text-size: 16px, $padding:15px 30px) {
-  padding: $padding;
-  background-color: $bg-color;
-  color: $text-color;
-  border: none;
-  border-radius: 7px;
+  border-radius: $border-radius;
   cursor: pointer;
   font-size: $text-size;
   outline: none;
@@ -21,15 +11,15 @@
 @mixin gaps($gap) {
     gap: $gap;
 }
-@mixin paddingtop($paddingtop) {
-    padding-top: $paddingtop;
-}
-@mixin paddingbottom($paddingbottom) {
-    padding-bottom: $paddingbottom;
-}
-@mixin margintop($margintop) {
-    margin-top: $margintop;
-}
-@mixin marginbottom($marginbottom) {
-    margin-bottom: $marginbottom;
+@mixin apply-spacing(
+    $padding: null,
+    $margin: null
+) {
+    @if $padding != null {
+        padding: $padding;
+    }
+    
+    @if $margin != null {
+        margin: $margin;
+    }
 }

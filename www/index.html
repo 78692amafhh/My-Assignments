@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hybrid Practice</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<header class="site-header" role="banner">
+  <div class="site-header__inner container">
+    <a href="/" class="brand" aria-label="Home">
+      <span class="brand__logo">ALVY</span>
+    </a>
+    <nav class="main-nav" role="navigation" aria-label="Primary">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="#projects">Projects</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#services">Services</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#studio">Studio</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#blog">Blog</a></li>
+        <li class="main-nav__item main-nav__item--dropdown">
+          <button class="main-nav__link main-nav__button" aria-haspopup="true" aria-expanded="false" id="pagesBtn">
+            Pages
+            <span class="caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="dropdown" role="menu" aria-label="Pages menu" aria-labelledby="pagesBtn">
+            <li role="none"><a role="menuitem" tabindex="-1" href="/about">About</a></li>
+            <li role="none"><a role="menuitem" tabindex="-1" href="/team">Team</a></li>
+          </ul>
+        </li>
+
+        <!-- cart -->
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__cart" href="/cart" aria-label="Cart">
+            <span class="cart__icon">🛒</span>
+            <span class="cart__badge" aria-hidden="true">0</span>
+          </a>
+        </li>
+
+        <!-- CTA -->
+        <li class="main-nav__item">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile toggle -->
+    <button class="mobile-toggle" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+      <span class="mobile-toggle__bar"></span>
+      <span class="mobile-toggle__bar"></span>
+      <span class="mobile-toggle__bar"></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu (same links repeated for simplicity) -->
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <ul class="mobile-menu__list">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/cart">Cart (0)</a></li>
+      <li><a class="btn btn--primary" href="#contact">Get in touch</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="section1">
+    <div class="container">
+        <div class="grid">
+            <div class="colml"><img class="w-100" src="https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2cb2934d35c4b4c5b51da_studio-hero-p-1080.webp" alt=""></div>
+            <div class="colmr">
+                <div class="howhelp">
+                    <div class="studio">
+                        <div class="subhead">Studio</div>
+                    </div>
+                    <div class="innerbox">
+                        <h1>How We Help Fashion Brands Stand Out
+</h1>
+                        <p>We help fashion brands stand out with our expertise in branding, marketing, and creative solutions that captivate audiences and differentiate brands.
+</p>
+                        <div class="rmore">
+                            <a href="#">Our Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section2">
+    <div class="container">
+        <div class="grid">
+            <div class="colml counter">
+                <p>sdfsdf</p>
+                <div class="number">150+</div>
+            </div>
+            <div class="colm2 counter">
+                <p>sdfsdf</p>
+                <div class="number">150+</div>
+            </div>
+            <div class="colm3 counter">
+                <p>sdfsdf</p>
+                <div class="number">150+</div>
+            </div>
+            <div class="colm4 counter">
+                <p>sdfsdf</p>
+                <div class="number">150+</div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

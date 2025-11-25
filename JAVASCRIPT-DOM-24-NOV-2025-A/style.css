@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+    color: #fff;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+.addfriend{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #1d1f22;
+    padding: 12px 24px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #01a23a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+button:hover{
+    background: #02731a;
+    color: #fff;
+}
+button:active{
+    transform: translateY(0);
+scale: .95;
+}

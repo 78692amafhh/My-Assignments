@@ -20,47 +20,88 @@ html * {
   font-weight: 400;
   text-decoration: none;
   font-size: 1.6rem;
+  color: #fff;
 }
 html body {
   height: 100%;
 }
+html body .container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 html body nav.navbar {
-  background: #181a1b;
-  padding: 20px 20px;
+  padding: 2.35rem 5rem;
 }
-html body nav.navbar a {
-  color: #fff;
+html body nav.navbar .bridge {
+  height: 25px;
+  left: 0;
+  top: 16px;
+  width: 100%;
+  position: absolute;
+}
+html body nav.navbar li {
+  list-style: none;
+  position: relative;
+}
+html body nav.navbar li a {
+  color: #4a4a4a;
   font-size: clamp(1.2rem, 1vw, 1.4rem);
+  font-weight: 700;
 }
-html body nav.navbar a.gets {
-  padding: 10px;
+html body nav.navbar li a:hover {
+  color: #4cabfc;
+}
+html body nav.navbar li a.gets {
+  padding: 1.1rem 3.2rem;
   background-color: #0353ac;
   color: white;
   border: none;
-  border-radius: 7px;
+  border-radius: 5rem;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1.4rem;
   outline: none;
 }
-html body button.btn-1 {
-  padding: 15px 30px;
-  background-color: red;
-  color: yellow;
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
-  font-size: 18px;
-  outline: none;
+html body nav.navbar li:hover .sub-menu {
+  display: block;
+  transition: all 0.3s ease;
+  margin-top: 20px;
 }
-html body button.btn-2 {
-  padding: 15px 30px;
-  background-color: rgb(9, 168, 0);
-  color: rgb(185, 88, 3);
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
-  font-size: 22px;
-  outline: none;
+html body nav.navbar li:hover .sub-menu a {
+  color: #4a4a4a;
+}
+html body nav.navbar li:hover .sub-menu a:hover {
+  color: #4cabfc;
+}
+html body nav.navbar li:hover .sub-menu a {
+  display: block;
+  transition: all 0.3s ease;
+}
+html body nav.navbar li:hover .sub-menu a a {
+  color: #fff;
+}
+html body nav.navbar .nav-logo img {
+  max-width: 126px;
+}
+html body nav.navbar .nav-links > ul {
+  position: relative;
+  display: inline-flex;
+  gap: 0 30px;
+}
+html body nav.navbar .sub-menu {
+  position: absolute;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  display: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+html body nav.navbar .sub-menu li {
+  margin: 1rem 0;
+}
+html body nav.navbar .sub-menu a {
+  color: #fff;
 }
 html body .textcenter {
   text-align: center;
@@ -73,7 +114,7 @@ html body .w-100 {
 }
 html body .flex {
   display: flex;
-  gap: 20px;
+  gap: 3.8rem;
   align-items: center;
 }
 html body .flexjustcent {
@@ -94,17 +135,17 @@ html body .grid3 {
 }
 html body .topbar {
   background-image: linear-gradient(124.64deg, #0264ca, #460ba4);
-  padding: 20px 15px;
+  padding: 1.6rem 1.5rem;
 }
 html body .topbar p {
   font-weight: 600;
   display: flex;
   justify-content: center;
   color: #fff;
-  gap: 6px;
+  gap: 0.4rem;
 }
 html body .topbar p svg {
-  max-width: 12px;
+  max-width: 1.2rem;
 }
 html body h1 {
   font-size: 4.2rem;
@@ -113,8 +154,11 @@ html body h2 {
   font-size: 3.2rem;
 }
 html body p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
+}
+html body .hero {
+  background-image: linear-gradient(35deg, rgb(67, 6, 28), rgb(0, 44, 58) 60%);
 }
 @media (min-width: 992px) {
   html body img {

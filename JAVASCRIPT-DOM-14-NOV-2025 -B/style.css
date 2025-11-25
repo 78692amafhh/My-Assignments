@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+    color: #fff;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #1f1f1f;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.innerrow {
+  display: flex;
+    flex-direction: column;
+}
+button {
+    background-color: rgb(52 52 52);
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+    border-radius: 50px;
+    border: 1px solid rgb(52 52 52);
+    cursor: pointer;
+}
+.box {
+    padding: 20px;
+    border-radius: 10px;
+}
+.team-info {
+    background: #fff;
+    padding: 40px;
+}
+.win-team {
+    color: green;
+    
+}
+.win-captain {
+    color: rgb(149, 75, 6);
+}
+.win-coach {
+    color: rgb(20, 90, 183);
+}
+.win-trophies {
+    color: rgb(236, 7, 163);
+}
+.win-city {
+    color: rgb(80, 19, 149);
+}

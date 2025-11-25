@@ -1,0 +1,79 @@
+:root {
+    /* Color Theme */
+    --bg-body: #121212;
+    --bg-inner-box: #1e1e1e;
+    --bg-box-2: #cebd63;
+    --primary: rgba(244,242,237,.6);
+    --titles: #f4f2ed;
+    --accent: #F6DD80;
+    
+    /* Flex, Grid Display */
+    --display-flex: flex;
+    --display-grid: grid;
+
+    /* Flex Properties */
+    --flex-center: center;
+    --flex-between: space-between;
+    --flex-around: space-around;
+    --flex-column: column;
+    --flex-row: row;
+    --flex-wrap: wrap;
+    --flex-nowrap: nowrap;
+    --flex-gap: 1.5rem;
+
+    /* Grid Properties */
+    --grid-gap-xs: 0.5rem;
+    --grid-gap-sm: 1rem;
+    --grid-gap-md: 2rem;
+    --grid-gap-lg: 3rem;
+    --grid-2: repeat(2, 1fr);
+    --grid-3: repeat(3, 1fr);
+    --grid-4: repeat(4, 1fr);
+
+    /* Padding Variables */
+    --pad-xs: 0.5rem;
+    --pad-sm: 1rem;
+    --pad-md: 2rem;
+    --pad-lg: 3rem;
+    --pad-xl: 5rem;
+
+    /* Margin Variables */
+    --mar-xs: 0.5rem;
+    --mar-sm: 1rem;
+    --mar-md: 2rem;
+    --mar-lg: 3rem;
+    --mar-xl: 5rem;
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 25px;
+
+    /* Typography */
+    --fs-xs: 0.92rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.28rem;
+    --fs-lg: 2rem;
+    --fw-med: 500;
+    --fw-bold: 700;
+}
+
+    justify-content: center;
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: var(--primary);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

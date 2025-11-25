@@ -1,0 +1,80 @@
+// Hybrid SCSS + CSS Variables Demo
+// ================================
+
+// Import partials
+@import 'variables';
+@import 'mixins';
+@import 'components';
+
+// CSS Custom Properties (Runtime variables)
+// Export SCSS values to CSS custom properties
+:root {
+    // Colors from dark theme (default)
+    @each $key, $value in map-get($themes, 'dark') {
+        --color-#{$key}: #{$value};
+    }
+    
+    // Spacing scale
+    @each $key, $value in $spacing-scale {
+        --space-#{$key}: #{$value};
+    }
+    
+    // Border radius
+    @each $key, $value in $border-radius {
+        --radius-#{$key}: #{$value};
+    }
+    
+    // Layout
+    --container-max-width: #{map-get($layout, 'container-max-width')};
+}
+
+// Base styles
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: map-get($font-family, 'sans');
+    font-size: map-get($font-size, 'base');
+    line-height: 1.6;
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    
+    @include respond-to('sm') {
+        padding: 0 var(--space-xl);
+    }
+}
+
+// Utility classes
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gradient {
+    @include text-gradient(var(--color-accent), #cebd63);
+}

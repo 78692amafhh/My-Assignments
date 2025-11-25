@@ -1,0 +1,110 @@
+// SCSS Variables - Design Tokens (Compile-time)
+// ============================================
+
+// Colors - Base palette
+$colors: (
+    'primary-50': #f0f9ff,
+    'primary-100': #e0f2fe,
+    'primary-500': #0ea5e9,
+    'primary-900': #0c4a6e,
+    
+    'gray-50': #f9fafb,
+    'gray-100': #f3f4f6,
+    'gray-200': #e5e7eb,
+    'gray-300': #d1d5db,
+    'gray-400': #9ca3af,
+    'gray-500': #6b7280,
+    'gray-600': #4b5563,
+    'gray-700': #374151,
+    'gray-800': #1f2937,
+    'gray-900': #111827,
+    
+    'success': #22c55e,
+    'warning': #eab308,
+    'error': #ef4444,
+    'info': #3b82f6
+);
+
+// Theme definitions
+$themes: (
+    'dark': (
+        'bg-primary': #0f172a,
+        'bg-secondary': #1e293b,
+        'bg-tertiary': #334155,
+        'text-primary': #f1f5f9,
+        'text-secondary': #cbd5e1,
+        'text-tertiary': #94a3b8,
+        'border': #475569,
+        'accent': #f6dd80
+    ),
+    'light': (
+        'bg-primary': #ffffff,
+        'bg-secondary': #f8fafc,
+        'bg-tertiary': #f1f5f9,
+        'text-primary': #1e293b,
+        'text-secondary': #475569,
+        'text-tertiary': #64748b,
+        'border': #e2e8f0,
+        'accent': #0ea5e9
+    )
+);
+
+// Spacing scale (8px base)
+$spacing-base: 0.5rem;
+$spacing-scale: (
+    'xs': $spacing-base * 1,   // 4px
+    'sm': $spacing-base * 2,   // 8px
+    'md': $spacing-base * 3,   // 12px
+    'lg': $spacing-base * 4,   // 16px
+    'xl': $spacing-base * 6,   // 24px
+    '2xl': $spacing-base * 8,  // 32px
+    '3xl': $spacing-base * 12  // 48px
+);
+
+// Typography
+$font-family: (
+    'sans': 'Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif,
+    'mono': 'Fira Code', 'Monaco', 'Consolas', monospace
+);
+
+$font-size: (
+    'xs': 0.75rem,    // 12px
+    'sm': 0.875rem,   // 14px
+    'base': 1rem,     // 16px
+    'lg': 1.125rem,   // 18px
+    'xl': 1.25rem,    // 20px
+    '2xl': 1.5rem,    // 24px
+    '3xl': 1.875rem   // 30px
+);
+
+$font-weight: (
+    'normal': 400,
+    'medium': 500,
+    'semibold': 600,
+    'bold': 700
+);
+
+// Border radius
+$border-radius: (
+    'sm': 0.25rem,    // 4px
+    'md': 0.5rem,     // 8px
+    'lg': 0.75rem,    // 12px
+    'xl': 1rem,       // 16px
+    '2xl': 1.5rem,    // 24px
+    'full': 9999px
+);
+
+// Breakpoints
+$breakpoints: (
+    'sm': 640px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1280px
+);
+
+// Layout
+$layout: (
+    'container-max-width': 1200px,
+    'header-height': 4rem,
+    'sidebar-width': 16rem
+);

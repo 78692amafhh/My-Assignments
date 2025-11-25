@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid SCSS + CSS Variables Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand">
+                <div class="logo">HS</div>
+                <div>
+                    <div class="brand-title">Hybrid Demo</div>
+                    <div class="brand-subtitle">SCSS + CSS Variables</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn" id="toggleTheme">Toggle Theme</button>
+                <button class="btn" id="spotlightToggle">Toggle Spotlight</button>
+                <button class="btn" id="randomAccent">Random Accent</button>
+            </div>
+        </header>
+
+        <main class="layout">
+            <aside class="sidebar">
+                <strong class="sidebar-title">Navigation</strong>
+                <nav class="nav">
+                    <button class="nav-btn active">Overview</button>
+                    <button class="nav-btn">Reports</button>
+                    <button class="nav-btn">Analytics</button>
+                    <button class="nav-btn">Settings</button>
+                </nav>
+            </aside>
+
+            <section class="content" id="contentArea">
+                <div class="content-header">
+                    <h2 class="content-title">Dashboard</h2>
+                    <div class="content-subtitle">Examples: scoped vars, runtime changes</div>
+                </div>
+
+                <div class="grid" id="cardGrid">
+                    <article class="card">
+                        <div class="card-icon">👥</div>
+                        <h3 class="card-title">Users</h3>
+                        <p class="card-text">Active users • 1,024</p>
+                        <div class="card-badge success">+12%</div>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">💰</div>
+                        <h3 class="card-title">Sales</h3>
+                        <p class="card-text">Month • ₹49,200</p>
+                        <div class="card-badge warning">+5%</div>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">🎫</div>
+                        <h3 class="card-title">Tickets</h3>
+                        <p class="card-text">Open • 8</p>
+                        <div class="card-badge error">-2</div>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Performance</h3>
+                        <p class="card-text">Score • 94%</p>
+                        <div class="card-badge success">Excellent</div>
+                    </article>
+                </div>
+
+                <section class="spotlight" id="spotlightSection">
+                    <h3 class="spotlight-title">🔦 Spotlight Section</h3>
+                    <div class="spotlight-content">
+                        <p>This section demonstrates <strong>section-scoped CSS variables</strong>. It overrides:</p>
+                        <ul>
+                            <li><code>--color-accent</code> → Different accent color</li>
+                            <li><code>--space-md</code> → Different spacing</li>
+                            <li><code>--radius-md</code> → Different border radius</li>
+                        </ul>
+                        <div class="spotlight-demo">
+                            <div class="demo-item">Demo Item 1</div>
+                            <div class="demo-item">Demo Item 2</div>
+                            <div class="demo-item">Demo Item 3</div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="footer">
+                    <p>Hybrid SCSS + CSS Variables Demo</p>
+                    <small>Edit SCSS variables and recompile to see changes</small>
+                </footer>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
