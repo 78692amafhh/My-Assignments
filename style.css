@@ -26,3 +26,31 @@ ul {
 ::-webkit-scrollbar{
     display: none;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+    color: #fff;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: rgb(30, 30, 30);
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    list-style-type: none;
+    padding: 20px;
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
